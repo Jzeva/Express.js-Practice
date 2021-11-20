@@ -6,7 +6,7 @@ app.get('/',(req,res)=>{
 });
 
 app.post('v1/trainers',(res,req)=>{
-    res.json({name:'Jz'})
+    res.json({})
 });
 
 app.listen(3000);
