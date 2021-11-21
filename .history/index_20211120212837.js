@@ -5,14 +5,11 @@ app.use(express.json());
 
 app.get('/v1/trainers',(req,res)=>{
     res.send('hello,world!');
-    //res.status(201).send();
 });
 
-app.post('/v1/tr/:id',(req,res)=>{
+app.post('/v1/tr',(req,res)=>{
     const { name }=req.body;
-    const{ gender } = req.query;
-    const{ id } = req.params;
-    res.send({name,gender,id});
+    res.send({name});
 });
 
 app.listen(3000);
