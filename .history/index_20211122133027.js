@@ -15,11 +15,11 @@ app.post('/v1/tr/:id',(req,res)=>{
     res.send({name,gender,id});
 });
 
-const router = express.Router();
+const router = express.router();
 router.get('/v2test',(req,res)=>{
     res.send('v2 router');
 })
 
 app.use('/v2',router);
 
-app.listen(3000,console.log('server listening on port 3000'));
+app.listen(3000);
