@@ -15,7 +15,6 @@ app.post('/v1/tr/:id',(req,res)=>{
     res.send({name,gender,id});
 });
 
-
 const router = express.Router();
 router.get('/v2test',(req,res)=>{
     res.send('v2 router');
