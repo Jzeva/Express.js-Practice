@@ -1,0 +1,25 @@
+{
+  "name": "express.js-practice",
+  "version": "1.0.0",
+  "description": "Practice for Express.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jzeva/Express.js-Practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jzeva/Express.js-Practice/issues"
+  },
+  "homepage": "https://github.com/Jzeva/Express.js-Practice#readme",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15"
+  }
+}

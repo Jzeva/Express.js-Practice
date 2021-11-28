@@ -8,7 +8,7 @@ app.get('/v1/trainers',(req,res)=>{
     //res.status(201).send();
 });
 
-app.post('/v1/tr/:id',(req,res)=>{
+app.post('/v1/:id',(req,res)=>{
     const { name }=req.body;
     const{ gender } = req.query;//?aaa=bbb
     const{ id } = req.params;//：id
@@ -23,4 +23,4 @@ router.get('/v2test',(req,res)=>{
 
 app.use('/v2',router);
 
-app.listen(3000,console.log('server listening on port 3000'));
+app.listen(3000);
