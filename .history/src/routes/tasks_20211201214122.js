@@ -1,0 +1,25 @@
+const express = require('express')
+const checkTaskExist = require('../middleware/checkTaskExist');
+const parseId = require('../middleware/parseId')
+const {
+    getAllTasks,
+    getTaskById,
+    updateTaskById,
+    deleteTaskById,
+    addTask,
+  } = require('../controllers/tasks');
+
+const taskRouter = express.Router();
+
+taskRouter.get('', getAllTasks);
+
+taskRouter.get('/:id', parseId, checkTaskExist, getTaskById);
+
+taskRouter.put('/:id', parseId, checkTaskExist, updateTaskById);
+
+taskRouter.post('', addTask);
+
+taskRouter.delete('/:id', parseId, checkTaskExist, deleteTaskById); 
+
+module.exports = taskRouter;
+
