@@ -5,7 +5,6 @@ const cors = require('cors');
 const morgan = require('morgan')
 const helmet = require('helmet');
 const router= require('./routes');
-const logger = require('./utils/logger')
 
 
 const app = express();
@@ -19,8 +18,6 @@ app.use(helmet());
 
 app.use('/v1',router);
 
-logger.debug('debug info');
-
 app.listen(PORT,()=>{
-    logger.info(`Server listening on port ${PORT}`)
+    console.log(`Server listening on port ${PORT}`)
 })

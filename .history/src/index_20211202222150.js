@@ -19,8 +19,6 @@ app.use(helmet());
 
 app.use('/v1',router);
 
-logger.debug('debug info');
-
 app.listen(PORT,()=>{
-    logger.info(`Server listening on port ${PORT}`)
+    console.log(`Server listening on port ${PORT}`)
 })
